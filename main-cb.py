@@ -26,16 +26,17 @@ def get_translation(f, t, w):
 
 
 while True:
-    w = input('input key: ')
+    w = input('\n请输入原文：\n')
 
     w = get_translation('zh', 'en', w)
-    print(w)
+    # print(w)
 
     w = get_translation('en', 'zh', w)
-    print(w)
+    # print(w)
 
     w = get_translation('zh', 'ja', w)
-    print(w)
+    # print(w)
 
     w = get_translation('ja', 'zh', w)
-    print(w)
+    print()
+    print('转换结果：\n' + w)
